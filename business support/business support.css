@@ -123,7 +123,7 @@ input[type=checkbox]{
     display: flex;
     /*background: url('shake.png');*/
 
-    background: linear-gradient(rgba(2, 25, 102, 0.8), rgba(2, 25, 102, 0.8)), url(res/shake.png) center no-repeat ;
+    background: linear-gradient(rgba(2, 25, 102, 0.8), rgba(2, 25, 102, 0.8)), url(../res/shake.png) center no-repeat ;
     /*opacity: 0.8;*/
 }
 
@@ -340,7 +340,7 @@ h3{
     /*top title style*/
     #head2{
         height: 179px;
-        background: linear-gradient(rgba(2, 25, 102, 0.8), rgba(2, 25, 102, 0.8)), url(res/shake2.png) center/cover no-repeat  ;
+        background: linear-gradient(rgba(2, 25, 102, 0.8), rgba(2, 25, 102, 0.8)), url(../res/shake2.png) center/cover no-repeat  ;
     }
     #topic{
         font-size: 50px;

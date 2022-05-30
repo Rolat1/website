@@ -122,7 +122,7 @@ input[type=checkbox]{
     display: flex;
     /*background: url('shake.png');*/
 
-    background: linear-gradient(rgba(2, 25, 102, 0.8), rgba(2, 25, 102, 0.8)), url(res/about_us_back.png) center no-repeat ;
+    background: linear-gradient(rgba(2, 25, 102, 0.8), rgba(2, 25, 102, 0.8)), url(../res/shake.png) center no-repeat ;
     /*opacity: 0.8;*/
 }
 
@@ -156,10 +156,13 @@ img {
     flex-direction: column;
     align-items: center;
 }
+
 .flex-contain2{
     margin: 20px;
+    width: fit-content;
     box-shadow: 4px 0 4px 1px rgba(0, 0, 0, 0.25), 0 4px 9px 1px rgba(0, 0, 0, 0.25);
 }
+
 div.flex-contain{
     padding: 20px;
 }
@@ -177,7 +180,8 @@ div.flex-contain{
     /*height: fit-content;*/
 }
 
-.side-by-side div{
+.side-by-side div,
+.side-by-side2 div{
     padding-bottom: 20px;
     /*flex-basis: 50%;*/
 }
@@ -192,8 +196,10 @@ div.flex-contain{
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 600;
-    font-size: 30px;
+    font-size: 36px;
+    line-height: 120%;
     text-align: center;
+    padding-bottom: 10px;
     /* or 60px */
 
     display: flex;
@@ -201,9 +207,7 @@ div.flex-contain{
 }
 
 .text{
-    padding-right: 20px;
-    padding-left: 20px;
-    padding-bottom: 40px;
+    padding-bottom: 30px;
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -214,24 +218,6 @@ div.flex-contain{
     /*letter-spacing: -0.015em;*/
     /*text-align: center;*/
     color: #000000;
-}
-
-h6{
-    padding: 5px 20px;
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    color: #FFFFFF;
-}
-
-.who{
-    display: flex;
-    background-color: #021966;
-    height: fit-content;
-    width: fit-content;
-    justify-self: right;
-    margin: 30px 20px;
 }
 
 
@@ -263,22 +249,8 @@ footer{
     /*margin-right: 30px;*/
     padding-bottom: 10px;
 }
-.person h6{
-    
-}
-.person{
-    border: 3px #000000;
-    display: flex;
-    align-items: center;
-}
-.teams{
-    display: flex;
-    justify-content: space-between;
-    border-radius: 5px;
-}
-.pics{
-    background-color: #000000;
-}
+
+
 .footer-info{
     display: flex;
     flex-direction: row;
@@ -357,7 +329,7 @@ h3{
     /*top title style*/
     #head2{
         height: 179px;
-        background: linear-gradient(rgba(2, 25, 102, 0.8), rgba(2, 25, 102, 0.8)), url(res/about_us_back.png) center/cover no-repeat  ;
+        background: linear-gradient(rgba(2, 25, 102, 0.8), rgba(2, 25, 102, 0.8)), url(../res/shake2.png) center/cover no-repeat  ;
     }
     #topic{
         font-size: 50px;
@@ -365,18 +337,24 @@ h3{
     }
     /*top title style ends*/
 
+    h4{
+        font-size: 30px;
+    }
     .footer,
     .footer-design,
     .side-by-side{
         flex-direction: column;
     }
-    .side-by-side2{
-        flex-direction: column-reverse;
-    }
     .footer{
         padding-left: 20px;
         text-align: center;
     }
+
+    .side-by-side2,
+    .side-by-side{
+        border-top: 5px #021966;
+    }
+
 
     .grid-container{
         display: flex;
@@ -387,11 +365,13 @@ h3{
         width: 100%;
     }
 
+    .side-by-side2{
+        flex-direction: column-reverse;
+        text-align: left;
+    }
+
     .footer-info{
         justify-content: space-between;
     }
 
-    .flex-contain{
-        margin-left: 0;
-    }
 }

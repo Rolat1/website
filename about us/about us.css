@@ -122,7 +122,7 @@ input[type=checkbox]{
     display: flex;
     /*background: url('shake.png');*/
 
-    background: linear-gradient(rgba(2, 25, 102, 0.8), rgba(2, 25, 102, 0.8)), url(res/shake.png) center no-repeat ;
+    background: linear-gradient(rgba(2, 25, 102, 0.8), rgba(2, 25, 102, 0.8)), url(../res/about_us_back.png) center no-repeat ;
     /*opacity: 0.8;*/
 }
 
@@ -150,44 +150,59 @@ img {
     /*object-fit: contain;*/
 }
 
-.flex-contain{
+.flex-contain,
+.flex-contain2{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-
+.flex-contain2{
+    margin: 20px;
+    box-shadow: 4px 0 4px 1px rgba(0, 0, 0, 0.25), 0 4px 9px 1px rgba(0, 0, 0, 0.25);
+}
 div.flex-contain{
     padding: 20px;
 }
 
-
-.side-by-side{
-    display: flex;
-    flex-direction: row;
-    /*align-content: space-between;*/
-    /*justify-content: space-between;*/
-    margin-left: 30px;
-    margin-right: 30px;
-    margin-bottom: 30px;
+.side-by-side,
+.side-by-side2{
+    /*display: flex;*/
+    /*flex-direction: row;*/
+    /*justify-content: space-around;*/
+    /*max-height: 597px;*/
+    margin-left: 20px;
+    margin-right: 20px;
+    align-items: center;
+    max-height: min-content;
+    /*height: fit-content;*/
 }
 
-h6{
-    font-family: 'Poppins',sans-serif;
+.side-by-side div{
+    padding-bottom: 20px;
+    /*flex-basis: 50%;*/
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 10px;
+}
+
+.h4{
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 600;
-    font-size: 20px;
-    /*line-height: ;*/
-    /* or 48px */
+    font-size: 30px;
+    text-align: center;
+    /* or 60px */
 
     display: flex;
-    /*align-items: center;*/
-    text-align: center;
-
     color: #021966;
 }
 
-
 .text{
+    padding-right: 20px;
+    padding-left: 20px;
     padding-bottom: 40px;
     font-family: 'Poppins', sans-serif;
     font-style: normal;
@@ -197,26 +212,51 @@ h6{
     /*display: flex;*/
     /*align-items: center;*/
     /*letter-spacing: -0.015em;*/
-    text-align: center;
+    /*text-align: center;*/
     color: #000000;
 }
 
-h4{
+h6{
+    padding: 5px 20px;
     font-family: 'Poppins', sans-serif;
     font-style: normal;
-    font-weight: 600;
-    font-size: 36px;
-    line-height: 150.9%;
-    /* or 60px */
-
-    display: flex;
-    align-items: center;
-
-    color: #021966;
+    font-weight: 400;
+    font-size: 20px;
+    color: #FFFFFF;
 }
 
+.who{
+    display: flex;
+    background-color: #021966;
+    height: fit-content;
+    width: fit-content;
+    justify-self: right;
+    margin: 30px 20px;
+}
 
-
+.person h6{
+    color: black;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.person{
+    border: #000000 3px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.teams{
+    display: flex;
+    justify-content: space-between;
+    border-radius: 5px;
+}
+.pics{
+    height: 40px;
+    width: 40px;
+    background-color: #000000;
+}
 
 /*footer css*/
 footer{
@@ -246,8 +286,6 @@ footer{
     /*margin-right: 30px;*/
     padding-bottom: 10px;
 }
-
-
 .footer-info{
     display: flex;
     flex-direction: row;
@@ -326,7 +364,7 @@ h3{
     /*top title style*/
     #head2{
         height: 179px;
-        background: linear-gradient(rgba(2, 25, 102, 0.8), rgba(2, 25, 102, 0.8)), url(res/shake2.png) center/cover no-repeat  ;
+        background: linear-gradient(rgba(2, 25, 102, 0.8), rgba(2, 25, 102, 0.8)), url(../res/about_us_back.png) center/cover no-repeat  ;
     }
     #topic{
         font-size: 50px;
@@ -339,14 +377,12 @@ h3{
     .side-by-side{
         flex-direction: column;
     }
+    .side-by-side2{
+        flex-direction: column-reverse;
+    }
     .footer{
         padding-left: 20px;
         text-align: center;
-    }
-
-    .side-by-side2,
-    .side-by-side{
-        border-top: 5px #021966;
     }
 
     .grid-container{
@@ -358,18 +394,10 @@ h3{
         width: 100%;
     }
 
-    .side-by-side2{
-        flex-direction: column-reverse;
-        text-align: left;
-    }
-
     .footer-info{
         justify-content: space-between;
     }
-    hr{
-        display: block;
 
-    }
     .flex-contain{
         margin-left: 0;
     }

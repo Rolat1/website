@@ -122,7 +122,7 @@ input[type=checkbox]{
     display: flex;
     /*background: url('shake.png');*/
 
-    background: linear-gradient(rgba(2, 25, 102, 0.8), rgba(2, 25, 102, 0.8)), url(res/shake.png) center no-repeat ;
+    background: linear-gradient(rgba(2, 25, 102, 0.8), rgba(2, 25, 102, 0.8)), url(../res/shake.png) center no-repeat ;
     /*opacity: 0.8;*/
 }
 
@@ -150,64 +150,22 @@ img {
     /*object-fit: contain;*/
 }
 
-.flex-contain,
-.flex-contain2{
+.flex-contain{
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-.flex-contain2{
-    margin: 20px;
-    width: fit-content;
-    box-shadow: 4px 0 4px 1px rgba(0, 0, 0, 0.25), 0 4px 9px 1px rgba(0, 0, 0, 0.25);
 }
 
 div.flex-contain{
     padding: 20px;
 }
 
-.side-by-side,
-.side-by-side2{
-    /*display: flex;*/
-    /*flex-direction: row;*/
-    /*justify-content: space-around;*/
-    /*max-height: 597px;*/
-    margin-left: 20px;
-    margin-right: 20px;
-    align-items: center;
-    max-height: min-content;
-    /*height: fit-content;*/
-}
 
-.side-by-side div,
-.side-by-side2 div{
-    padding-bottom: 20px;
-    /*flex-basis: 50%;*/
-}
-
-.grid-container{
-    display: grid;
-    grid-template-columns: auto auto;
-    column-gap: 10px;
-}
-
-.h4{
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 36px;
-    line-height: 120%;
-    text-align: center;
-    padding-bottom: 10px;
-    /* or 60px */
-
-    display: flex;
-    color: #021966;
-}
 
 .text{
-    padding-bottom: 30px;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-bottom: 40px;
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -218,6 +176,25 @@ div.flex-contain{
     /*letter-spacing: -0.015em;*/
     /*text-align: center;*/
     color: #000000;
+}
+
+h6{
+    padding: 5px 20px;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    color: #FFFFFF;
+}
+
+#who{
+    display: flex;
+    background-color: #021966;
+    height: fit-content;
+    width: fit-content;
+    justify-self: right;
+    margin: 30px 20px;
+    align-self: flex-start;
 }
 
 
@@ -329,7 +306,7 @@ h3{
     /*top title style*/
     #head2{
         height: 179px;
-        background: linear-gradient(rgba(2, 25, 102, 0.8), rgba(2, 25, 102, 0.8)), url(res/shake2.png) center/cover no-repeat  ;
+        background: linear-gradient(rgba(2, 25, 102, 0.8), rgba(2, 25, 102, 0.8)), url(../res/shake2.png) center/cover no-repeat  ;
     }
     #topic{
         font-size: 50px;
@@ -337,9 +314,6 @@ h3{
     }
     /*top title style ends*/
 
-    h4{
-        font-size: 30px;
-    }
     .footer,
     .footer-design,
     .side-by-side{
@@ -350,28 +324,18 @@ h3{
         text-align: center;
     }
 
-    .side-by-side2,
-    .side-by-side{
-        border-top: 5px #021966;
-    }
 
-
-    .grid-container{
-        display: flex;
-    }
 
     .footer-design{
         align-content: center;
         width: 100%;
     }
 
-    .side-by-side2{
-        flex-direction: column-reverse;
-        text-align: left;
-    }
-
     .footer-info{
         justify-content: space-between;
     }
 
+    .flex-contain{
+        margin-left: 0;
+    }
 }
