@@ -166,8 +166,8 @@ div.flex-contain{
     padding-bottom: 40px;
     font-family: 'Poppins', sans-serif;
     font-style: normal;
-    font-weight: 300;
-    font-size: 18px;
+    font-weight: 400;
+    font-size: 20px;
     line-height: 30px;
     /*display: flex;*/
     /*align-items: center;*/
@@ -177,7 +177,20 @@ div.flex-contain{
 }
 
 
+.inline{
+    text-decoration: dashed;
+}
 
+span{
+    display: none;
+}
+input[id=checkbox2]:checked ~ span,
+input[id=checkbox2]:checked ~ span,{
+    display: inline;
+}
+input[id=checkbox2]:checked ~ .inline{
+    display: none;
+}
 
 
 /*footer css*/

@@ -1,0 +1,356 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&family=Open+Sans:wght@300;400&family=Poppins:wght@300;400;600;700&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+}
+
+/*NAVBAR STYLING*/
+a {
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  line-height: 24px;
+  letter-spacing: -0.015em;
+
+  color: #000000;
+}
+
+a:active{
+  color: #990201;
+;
+}
+
+.menu li{
+  font-weight: 600;
+  font-size: 14px;
+}
+li {
+  list-style: none;
+}
+/*down arrow*/
+.arrow {
+  border: solid black;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 3px;
+}
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+/* CHECKBOX HACK */
+input[type=checkbox]{
+  display: none;
+}
+/*HAMBURGER MENU*/
+.hamburger {
+  display: none;
+  font-size: 24px;
+  user-select: none;
+}
+/*NORMAL NAVBAR*/
+.navbar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #FFFFFF;
+  color: #000000;
+}
+
+/* LOGO */
+.logo{
+  width: 25%;
+  display: flex;
+  justify-content: center;
+}
+
+/* NAVBAR MENU */
+.menu {
+  display: flex;
+  gap: 2em;
+  font-size: 18px;
+}
+
+.menu li:hover{
+  color: #9b4774;
+  /*transition: 3s ease;*/
+}
+
+.menu li {
+  padding-right: 1em;
+}
+/* DROPDOWN MENU */
+.services {
+  position: relative;
+}
+.dropdown {
+  background-color: #FFFFFF;
+  padding: 10px 0;
+  position: absolute; /*WITH RESPECT TO PARENT*/
+  display: none;
+  width: max-content ;
+  /*border-radius: 8px;*/
+  /*top: 35px;*/
+}
+.dropdown li + li {
+  /*margin-top: 10px;*/
+}
+.dropdown li {
+  padding: 0.5em 1em;
+  text-align: left;
+  font-weight: 600;
+  font-size: 15px;
+}
+.dropdown li:hover {
+  /*background-color: #4c9e9e;*/
+}
+.services:hover .dropdown {
+  display: block;
+}
+
+/*NAVBAR STYLING ENDS*/
+
+/*top title styling*/
+#head2 {
+  width: 100%;
+  height: 515px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  /*background: url('shake.png');*/
+
+  background: linear-gradient(rgba(2, 25, 102, 0.8), rgba(2, 25, 102, 0.8)), url(../res/shake.png) center no-repeat ;
+  /*opacity: 0.8;*/
+}
+
+#topic  {
+  width: available;
+  /*height: 135px;*/
+  /*vertical-align: middle;*/
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  font-size: 90px;
+
+  line-height: 105px;
+  /* identical to box height */
+  letter-spacing: -0.015em;
+
+  color: #FFFFFF;
+}
+/*top title styling ends*/
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+  /*height: 515px;*/
+  /*object-fit: contain;*/
+}
+
+.flex-contain{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+div.flex-contain{
+  padding: 20px;
+}
+
+article.text{
+  text-align: right;
+}
+
+.text,
+.main-section2div p{
+  padding-bottom: 40px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  /*display: flex;*/
+  /*align-items: center;*/
+  /*letter-spacing: -0.015em;*/
+  color: #000000;
+}
+.main-section2div p {
+  padding-bottom: 10px;
+}
+
+.main-section1,
+.main-section2{ /* Styling page main section 1: start */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 30px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+img{
+  width: 100%;
+  height: auto;
+}
+
+.main-section2{ /* Styling page main section 2: start */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+
+/*footer css*/
+footer{
+  width: 100%;
+  padding-top: 15px;
+  padding-right: 20px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #FFFFFF;
+}
+
+.footer-design{
+  display: flex;
+  flex-direction: row;
+  width: 75%;
+  justify-content: space-between;
+}
+
+.footer-info > div,
+.footer-info2 > div{
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 24px;
+  display: flex;
+  flex-direction: column;
+  /*margin-right: 30px;*/
+  padding-bottom: 10px;
+}
+
+
+.footer-info{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-basis: 53%;
+}
+
+
+#round{
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  display: block;
+  margin: auto;
+}
+
+h3{
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+#LR-Copy{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  text-align: center;
+  margin-bottom: 6px;
+  font-size: 12px;
+}
+
+.footer{
+  display: flex;
+  flex-direction: row
+}
+/*end of footer css*/
+
+@media only screen and (max-width: 760px) {
+  /*NAVBAR MEDIA QUERY*/
+  .menu {
+    display:none;
+    position: absolute;
+    width: max-content ;
+    background-color:white;
+    right: 0;
+    /*left: 0;*/
+    text-align: left;
+    padding: 16px 10px;
+  }
+  .menu li:hover {
+    /*display: inline-block;*/
+    /*background-color:#4c9e9e;*/
+    /*transition: 0.3s ease;*/
+  }
+  .menu li + li {
+    margin-top: 12px;
+  }
+  input[type=checkbox]:checked ~ .menu{
+    display: block;
+  }
+  .hamburger {
+    margin-right: 10px;
+    display: block;
+  }
+  .dropdown {
+    padding-top: 0;
+    right: 100%;
+    top: 20px;
+    transform: translateX(35%);
+  }
+  .dropdown li:hover {
+    /*background-color: #4c9e9e;*/
+  }
+  /*NAVBAR ENDS*/
+
+  /*top title style*/
+  #head2{
+    height: 179px;
+    background: linear-gradient(rgba(2, 25, 102, 0.8), rgba(2, 25, 102, 0.8)), url(../res/shake2.png) center/cover no-repeat  ;
+  }
+  #topic{
+    font-size: 38px;
+    line-height: 50px;
+  }
+  /*top title style ends*/
+
+  #lost{
+    display: none;
+  }
+  article.text{
+    text-align: center;
+  }
+  .main-section2{
+    flex-direction: column;
+  }
+
+  .footer,
+  .footer-design,
+  .side-by-side{
+    flex-direction: column;
+  }
+  .footer{
+    padding-left: 20px;
+    text-align: center;
+  }
+
+
+
+  .footer-design{
+    align-content: center;
+    width: 100%;
+  }
+
+  .footer-info{
+    justify-content: space-between;
+  }
+
+  .flex-contain{
+    margin-left: 0;
+  }
+}

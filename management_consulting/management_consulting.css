@@ -332,8 +332,8 @@ h3{
         background: linear-gradient(rgba(2, 25, 102, 0.8), rgba(2, 25, 102, 0.8)), url(../res/shake2.png) center/cover no-repeat  ;
     }
     #topic{
-        font-size: 50px;
-        line-height: 80px;
+        font-size: 40px;
+        line-height: 60px;
     }
     /*top title style ends*/
 
