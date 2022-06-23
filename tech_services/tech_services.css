@@ -184,14 +184,47 @@ div.flex-contain{
 span{
     display: none;
 }
-input[id=checkbox2]:checked ~ span,
-input[id=checkbox2]:checked ~ span,{
+input[id=checkbox1]:checked ~ #s1{
     display: inline;
 }
-input[id=checkbox2]:checked ~ .inline{
+input[id=checkbox1]:checked ~ #inline1{
     display: none;
 }
 
+input[id=checkbox2]:checked ~ #s2{
+    display: inline;
+}
+input[id=checkbox2]:checked ~ #inline2{
+    display: none;
+}
+
+input[id=checkbox3]:checked ~ #s3{
+    display: inline;
+}
+input[id=checkbox3]:checked ~ #inline3{
+    display: none;
+}
+
+input[id=checkbox4]:checked ~ #s4{
+    display: inline;
+}
+input[id=checkbox4]:checked ~ #inline4{
+    display: none;
+}
+
+input[id=checkbox5]:checked ~ #s5{
+    display: inline;
+}
+input[id=checkbox5]:checked ~ #inline5{
+    display: none;
+}
+
+input[id=checkbox6]:checked ~ #s6{
+    display: inline;
+}
+input[id=checkbox6]:checked ~ #inline6{
+    display: none;
+}
 
 /*footer css*/
 footer{
@@ -280,7 +313,7 @@ h3{
     .menu li + li {
         margin-top: 12px;
     }
-    input[type=checkbox]:checked ~ .menu{
+    input[id=checkbox_toggle]:checked ~ .menu{
         display: block;
     }
     .hamburger {
